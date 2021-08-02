@@ -1,0 +1,348 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }/*# sourceMappingURL=style.css.map */
+
+// Variables 
+$main-font: 'Roboto', sans-serif;
+$fancy-font: 'Rubik Mono One', sans-serif;
+$main-black-color: #010101;
+$additional-black-color: #111111;
+$header-underline-color: #3a30f8;
+$actual-black-color: #000000;
+$background-white: #ffffff;
+
+// Header styles 
+
+.header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+
+
+  @media screen and (min-width: 1024px) {
+    padding-top: 0;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+    @media screen and (min-width: 1024px) {
+      margin-top: 10px;
+      width: 80%;
+    }
+
+    @media screen and (min-width: 1920px) {
+      margin-top: 29px;
+      width: calc(100vw - 376px * 2); 
+    } 
+  }
+
+  &__nav {
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 100vh;
+
+    @media screen and (min-width: 1024px) {
+      position: relative;
+      height: auto;
+      width: auto;
+      overflow: visible;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: visible;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__list-item {
+    position: relative;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    padding: 10px 0;
+
+    @media screen and (min-width: 1024px) {
+      padding: 0 20px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      padding: 0 38px;
+    }
+
+    span {
+      position: absolute;
+      display: block;
+      bottom: 5px;
+      left: -10%;
+      width: 0;
+      height: 1px;
+      background-color: $header-underline-color;
+
+      @media screen and (min-width: 1024px) {
+        bottom: -5px;
+        left: 28px;
+        width: 0;
+        height: 1px;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $additional-black-color;
+    font-family: $main-font;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 9px;
+    overflow: visible;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 25px;
+    height: 20px;
+
+    &__bar {
+      width: 100%;
+      height: 3px;
+      background-color: $actual-black-color;
+      border-radius: 3px;
+      &--first {
+
+      }
+
+      &--second {
+
+      }
+
+      &--third {
+
+      }
+    }
+
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+  }
+}
+
+// Main styles 
+
+.main {
+  position: relative;
+  display: flex;
+  background-color: $background-white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  overflow: visible;
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    align-items: auto;
+    justify-content: auto;
+    justify-content: flex-end;
+    margin-top: 5px;
+  }
+
+  @media screen and (min-width: 1920px) {
+    margin-top: 20px;
+  }
+  &__cog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+
+    .cog__img {
+      @media screen and (min-width: 1024px) {
+        height: 90vh;
+      }
+  
+      @media screen and (min-width: 1920px) {
+        height: auto;
+      }
+    }
+  }
+
+  &__description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 1024px) {
+      position: absolute;
+      display: block;
+      left: 25%;
+      top: 158px;
+      z-index: 2;
+    }
+
+    @media screen and (min-width: 1920px) {
+      left: 376px;
+    }
+  }
+
+  &__title {
+    color: $actual-black-color;
+    font-family: $fancy-font;
+    font-weight: 400;
+    font-size: 29px;
+    margin-bottom: 5px;
+    @media screen and (min-width: 1024px) {
+      font-size: 40px;
+      margin-bottom: auto;
+    }
+
+    @media screen and (min-width: 1920px) {
+      font-size: 60px;
+      letter-spacing: 23px;
+    }
+  }
+
+  &__subtitle {
+    font-family: $main-font;
+    font-weight: bold;
+    font-size: 12px;
+
+    @media screen and (min-width: 1024px) {
+      font-size: initial;
+    }
+  }
+
+  &__down-arrow {
+    height: 50px;
+    width: 10px;
+    margin: 10px;
+    @media screen and (min-width: 1024px) {
+      height: auto;
+      width: auto;
+      margin: auto;
+      margin-left: 22px;
+      margin-top: 27px;
+    }
+
+    @media screen and (min-width: 1920px) {
+      margin-left: 32px;
+      margin-top: 37px;
+    }
+  }
+
+  .image-box {
+    position: relative;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 1024px) {
+      display: block;
+    }
+
+    @media screen and (min-width: 1920px) {
+    }
+
+    &__arrow-case {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      @media screen and (min-width: 1024px) {
+        left: -65px;
+        top: 25px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        left: -65px;
+        top: 45px;
+      }
+
+    }
+
+    &__heading {
+      writing-mode: vertical-rl;
+      font-family: $main-font;
+      font-weight: bold;
+      transform: rotate(180deg);
+      font-size: 16px;
+      color: $background-white;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 10px;
+        color: $actual-black-color;
+      }
+
+      @media screen and (min-width: 1920px) {
+        font-size: 12px;
+      }
+    }
+
+    &__arrow {
+    }
+
+    &__pointer {
+      display: none;
+
+      @media screen and (min-width: 1024px) {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 10px;
+      }
+
+      @media screen and (min-width: 1920px) {
+        left: -10px;
+      }
+    }
+
+    &__image {
+      object-fit: cover;
+      width: 300px;
+
+      @media screen and (min-width: 1024px) {
+        width: 60vw;
+      }
+
+      @media screen and (min-width: 1920px) {
+        width: auto;
+      }
+    }
+  }
+}
+
+// Advantages section 

@@ -1,0 +1,329 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding-top: 0;
+  }
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+}
+@media screen and (min-width: 1024px) {
+  .header__wrapper {
+    margin-top: 10px;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header__wrapper {
+    margin-top: 29px;
+    width: calc(100vw - 376px * 2);
+  }
+}
+.header__nav {
+  position: fixed;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  width: 0;
+  height: 100vh;
+}
+@media screen and (min-width: 1024px) {
+  .header__nav {
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: visible;
+  }
+}
+.header__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: visible;
+}
+@media screen and (min-width: 1024px) {
+  .header__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.header__list-item {
+  position: relative;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  padding: 10px 0;
+}
+@media screen and (min-width: 1024px) {
+  .header__list-item {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header__list-item {
+    padding: 0 38px;
+  }
+}
+.header__list-item span {
+  position: absolute;
+  display: block;
+  bottom: 5px;
+  left: -10%;
+  width: 0;
+  height: 1px;
+  background-color: #3a30f8;
+}
+@media screen and (min-width: 1024px) {
+  .header__list-item span {
+    bottom: -5px;
+    left: 28px;
+    width: 0;
+    height: 1px;
+  }
+}
+.header__link {
+  text-decoration: none;
+  color: #111111;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 9px;
+  overflow: visible;
+}
+.header .burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 25px;
+  height: 20px;
+}
+.header .burger__bar {
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+  border-radius: 3px;
+}
+@media screen and (min-width: 1024px) {
+  .header .burger {
+    display: none;
+  }
+}
+
+.main {
+  position: relative;
+  display: flex;
+  background-color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  overflow: visible;
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    flex-direction: row;
+    align-items: auto;
+    justify-content: auto;
+    justify-content: flex-end;
+    margin-top: 5px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main {
+    margin-top: 20px;
+  }
+}
+.main__cog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .main__cog {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__cog .cog__img {
+    height: 90vh;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main__cog .cog__img {
+    height: auto;
+  }
+}
+.main__description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .main__description {
+    position: absolute;
+    display: block;
+    left: 25%;
+    top: 158px;
+    z-index: 2;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main__description {
+    left: 376px;
+  }
+}
+.main__title {
+  color: #000000;
+  font-family: "Rubik Mono One", sans-serif;
+  font-weight: 400;
+  font-size: 29px;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .main__title {
+    font-size: 40px;
+    margin-bottom: auto;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main__title {
+    font-size: 60px;
+    letter-spacing: 23px;
+  }
+}
+.main__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+@media screen and (min-width: 1024px) {
+  .main__subtitle {
+    font-size: initial;
+  }
+}
+.main__down-arrow {
+  height: 50px;
+  width: 10px;
+  margin: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .main__down-arrow {
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-left: 22px;
+    margin-top: 27px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main__down-arrow {
+    margin-left: 32px;
+    margin-top: 37px;
+  }
+}
+.main .image-box {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1024px) {
+  .main .image-box {
+    display: block;
+  }
+}
+.main .image-box__arrow-case {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 1024px) {
+  .main .image-box__arrow-case {
+    left: -65px;
+    top: 25px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main .image-box__arrow-case {
+    left: -65px;
+    top: 45px;
+  }
+}
+.main .image-box__heading {
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  transform: rotate(180deg);
+  font-size: 16px;
+  color: #ffffff;
+}
+@media screen and (min-width: 1024px) {
+  .main .image-box__heading {
+    font-size: 10px;
+    color: #000000;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main .image-box__heading {
+    font-size: 12px;
+  }
+}
+.main .image-box__pointer {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .main .image-box__pointer {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 10px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main .image-box__pointer {
+    left: -10px;
+  }
+}
+.main .image-box__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 300px;
+}
+@media screen and (min-width: 1024px) {
+  .main .image-box__image {
+    width: 60vw;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .main .image-box__image {
+    width: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
