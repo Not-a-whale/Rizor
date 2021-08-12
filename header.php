@@ -17,6 +17,28 @@
     <link rel="icon" href="<?php echo $imgObject->main_logo ?>">
 </head>
 <body>
+<div class="scroll-indicator">
+    <div class="scroll-indicator__line scroll-indicator__line--top"></div>
+    <div class="scroll-indicator__container">
+        <div class="scroll-indicator__block scroll-indicator__block--main circle-active">
+            <div class="scroll-indicator__circle"></div>
+            <div class="scroll-indicator__dot"></div>
+        </div>
+        <div class="scroll-indicator__block scroll-indicator__block--advantages">
+            <div class="scroll-indicator__circle"></div>
+            <div class="scroll-indicator__dot"></div>
+        </div>
+        <div class="scroll-indicator__block scroll-indicator__block--modes">
+            <div class="scroll-indicator__circle"></div>
+            <div class="scroll-indicator__dot"></div>
+        </div>
+        <div class="scroll-indicator__block scroll-indicator__block--auditory">
+            <div class="scroll-indicator__circle"></div>
+            <div class="scroll-indicator__dot"></div>
+        </div>
+    </div>
+    <div class="scroll-indicator__line scroll-indicator__line--bottom"></div>
+</div>
 <header class="header">
     <div class="header__wrapper">
         <a href="/"><img src="<?php echo $imgObject->main_logo ?>" alt="main page logo in the header" class="main-logo"></a>

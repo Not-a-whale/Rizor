@@ -1,6 +1,9 @@
 <section class="advantages">
     <div class="advantages__img-container">
-        <img src="<?php  echo $imgObject->video_background ?>" alt="Video Background">
+        <div class="advantages__img-container--inner">
+            <img src="<?php  echo $imgObject->video_background ?>" alt="Video Background">
+            <img src="<?php  echo $imgObject->group_play_button ?>" alt="Group play button" class='play-button'>
+        </div>
     </div>
     <article class="advantages__design design">
         <h3 class="advantages__heading">Преимущества</h2>
