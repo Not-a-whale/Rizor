@@ -1,0 +1,18 @@
+{
+    "name": "sabao/src",
+    "autoload": {
+        "psr-4": {
+            "Sabao\\Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nikita",
+            "email": "sabaoth@ukr.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "ext-mysqli": "*"
+    }
+}
