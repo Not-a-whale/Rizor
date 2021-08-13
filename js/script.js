@@ -15,7 +15,7 @@ scrollIndicatorBlocks.forEach(block => block.addEventListener('mouseover', (e) =
 scrollIndicatorBlocks.forEach((block, index) => {
     block.addEventListener('click', () => {
         window.scrollTo({
-            top: index * (windowHeight + 40),
+            top: index * (windowHeight - 40),
             behavior: 'smooth'
         })
     })
