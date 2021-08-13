@@ -355,6 +355,7 @@ button, a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition: all .5s;
 
     div {
       display: flex;
@@ -382,6 +383,12 @@ button, a {
     font-weight: 400;
     font-size: 29px;
     margin-bottom: 5px;
+    transition: all .5s;
+
+    div,span {
+      transition: all .5s;
+    }
+    
     @media screen and (min-width: 1024px) {
       font-size: 40px;
       margin-bottom: auto;
